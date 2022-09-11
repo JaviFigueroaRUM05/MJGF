@@ -1,9 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"mjgf/mjgf"
 )
 
 func main() {
-	fmt.Println("Hello, world!")
+	var guessGame = NewGuessGame(2)
+	var game mjgf.MJGF
+	game.Register(guessGame)
+	game.Start()
 }
